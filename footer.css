@@ -1,0 +1,67 @@
+.footer {
+    background-color: rgb(19, 19, 19);
+    height: 80vh;
+    width: 100%;
+    font-family: 'Edu NSW ACT Foundation', cursive;
+
+}
+
+.container1 {
+    background-color: rgb(41, 41, 41);
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 40vh;
+}
+
+.container2 {
+    justify-content: space-around;
+    height: 40vh;
+    display: flex;
+    color: white;
+    align-items: center;
+}
+
+.text {
+    width: 50%;
+}
+
+.input-box input {
+    padding: 13px 40px;
+}
+
+.input-box button {
+    padding: 13px;
+    background-color: orange;
+    border: 2px solid orange;
+    position: absolute;
+}
+
+.text h1 {
+    padding: 15px 50px;
+}
+
+.text p {
+    padding: 0px 50px;
+}
+
+.container2 img {
+    width: 10vw;
+    height: 10vh;
+}
+
+.container2 ul {
+    display: flex;
+    list-style: none;
+    gap: 40px;
+}
+
+.container2 li:hover {
+    color: orange;
+
+}
+
+.input-box button:hover {
+    transform: scale(1.1);
+    transition: 0.5s;
+}
