@@ -1,0 +1,124 @@
+.conatiner2 {
+    display: flex;
+}
+
+.product1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-family: 'Edu NSW ACT Foundation', cursive;
+}
+
+.bar {
+    font-size: larger;
+}
+
+/* Add a pointer when hovering over the thumbnail images */
+.cursor {
+    cursor: pointer;
+}
+
+
+.numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+}
+
+.mySlides img {
+    width: 40vw;
+    height: 75vh;
+    padding: 25px 0px;
+}
+
+.row {
+    display: flex;
+}
+
+.demo {
+    opacity: 0.6;
+    height: 20vh;
+    width: 10vw;
+}
+
+.active,
+.demo:hover {
+    opacity: 1;
+}
+
+.product2 {
+    height: 135vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 33%;
+    padding: 30px;
+    gap: 10px;
+    font-family: 'Edu NSW ACT Foundation', cursive;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    font-size: larger;
+}
+
+.content2 {
+    display: flex;
+    justify-content: space-between;
+}
+
+.stock {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.star {
+    color: orange;
+    padding: 10px 0px;
+    font-size: 10px;
+}
+
+.content1 {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.para {
+    font-size: 20px;
+    padding: 30px 0px;
+    text-align: justify;
+}
+
+.qty {
+    display: flex;
+    gap: 10px;
+    background-color: rgb(209, 247, 240);
+    justify-content: center;
+    width: 8vw;
+    height: 6vh;
+    align-items: center;
+    margin: 20px 0px;
+}
+
+.qty input {
+    width: 50px;
+    background-color: rgb(209, 247, 240);
+    border: none;
+    color: gray;
+    font-size: 20px;
+}
+
+.btn {
+    width: 20vw;
+    height: 8vh;
+    background: orange;
+    border: none;
+    font-size: 25px;
+    color: white;
+}

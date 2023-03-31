@@ -8,6 +8,8 @@
     <title>Document</title>
     <link rel="stylesheet" href="navbar.css">
     <link rel="stylesheet" href="product.css">
+    <link rel="stylesheet" href="footer.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
 </head>
 
 <body>
@@ -26,10 +28,10 @@
                     <div class="product"><a href="product.html" class="anchor  active "> PRODUCT </a></div>
                 </li>
                 <li class="point">
-                    <div class="cart">CART</div>
+                    <div class="cart"><a href="cart.html" class="anchor"> CART </a></div>
                 </li>
                 <li class="point">
-                    <div class="cheackout">CHEACKOUT</div>
+                    <div class="cheackout"><a href="cheakout.html" class="anchor "> CHEACKOUT </a></div>
                 </li>
             </ul>
             <div class="button">
@@ -53,14 +55,156 @@
                 </div>
             </div>
             <div class="icons">
-                <i class="fa-brands fa-whatsapp"></i>
+                <i class="fa-brands fa-whatsapp "></i>
                 <i class="fa-brands fa-instagram"></i>
                 <i class="fa-brands fa-facebook-f"></i>
                 <i class="fa-brands fa-twitter"></i>
             </div>
         </div>
+        <div class="product1">
+
+            <div class="bar">
+                <span>Home</span>
+                <span style="color: grey;">></span>
+                <span>Furniture</span>
+                <span style="color: grey;">></span>
+                <span>Chair </span>
+                <span style="color: grey;">></span>
+                <span style="color: grey;">white morden chair</span>
+            </div>
+
+            <div class="mySlides">
+                <div class="numbertext">2 / 6</div>
+                <img src="img/4.jpg">
+            </div>
+
+            <div class="mySlides">
+                <div class="numbertext">3 / 6</div>
+                <img src="img/5.jpg">
+            </div>
+
+            <div class="mySlides">
+                <div class="numbertext">4 / 6</div>
+                <img src="img/6.jpg">
+            </div>
+
+            <div class="mySlides">
+                <div class="numbertext">6 / 6</div>
+                <img src="img/7.jpg">
+            </div>
+
+            <div class="row">
+                <div class="column">
+                    <img class="demo cursor" src="img/4.jpg" onclick="currentSlide(1)" alt="The Woods">
+                </div>
+                <div class="column">
+                    <img class="demo cursor" src="img/5.jpg" onclick="currentSlide(2)" alt="Cinque Terre">
+                </div>
+                <div class="column">
+                    <img class="demo cursor" src="img/6.jpg" onclick="currentSlide(3)" alt="Mountains and fjords">
+                </div>
+                <div class="column">
+                    <img class="demo cursor" src="img/7.jpg" onclick="currentSlide(5)" alt="Nature and sunrise">
+                </div>
+            </div>
+        </div>
+        <div class="product2">
+            <div class="content">
+                <div style="height: 3px; width: 5vw; background-color: orange;"></div>
+                <h3 style="color: orange">From $180</h3>
+                <h2>White Modern Chair</h2>
+            </div>
+            <div class="content2">
+                <div class="star" style="color: orange">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                </div>
+                <h4 style="color: grey;">Write a review</h4>
+            </div>
+            <div class="stock">
+                <span style="width: 10px; height: 10px; border-radius: 50px; background-color: green;"></span>
+                <span style="color: grey;">In Stock</span>
+            </div>
+            <p class="para" style="color: grey;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus
+                reiciendis, illum
+                aliquam laborum
+                praesentium laudantium sed omnis accusantium, facilis minus deserunt vitae officia veritatis nihil.
+                Minima voluptates eligendi iure laborum?</p>
+
+            <div class="qty">
+                <span style="color: grey;">Qty</span>
+                <input type="number" min="1" value="1">
+            </div>
+
+            <button class="btn">
+                Add Cart
+            </button>
+        </div>
+
+    </div>
+    <div class="footer">
+        <div class="container1">
+            <div class="text">
+                <h1 style="color: white;">Subscribe for a <span style="color: orange;">25% Discount </span></h1>
+                <p style="color: white;">Nulla ac convallis lorem, eget euismod nisl. Donec in libero sit amet
+                    mi
+                    vulputate
+                    consectetur. Donec
+                    auctor interdum purus, ac finibus massa bibendum nec.</p>
+            </div>
+            <div class="input-box">
+                <input type="email" placeholder="Your E-mail">
+                <button>Subscribe</button>
+            </div>
+        </div>
+        <div class="container2">
+            <div class="logo">
+                <img src="img/blender_logo.png" alt="">
+                <h4>&copy;2023 All rights reserved |</h4>
+            </div>
+            <ul>
+                <li>HOME</li>
+                <li>SHOP</li>
+                <li>PRODUCT</li>
+                <li>CART</li>
+                <li>CHEACKOUT</li>
+            </ul>
+        </div>
     </div>
     <script src="https://kit.fontawesome.com/72db1c0e5b.js" crossorigin="anonymous"></script>
+    <script>
+        let slideIndex = 1;
+        showSlides(slideIndex);
+
+        function plusSlides(n) {
+            showSlides(slideIndex += n);
+        }
+
+        function currentSlide(n) {
+            showSlides(slideIndex = n);
+        }
+
+        function showSlides(n) {
+            let i;
+            let slides = document.getElementsByClassName("mySlides");
+            let dots = document.getElementsByClassName("demo");
+            let captionText = document.getElementById("caption");
+            if (n > slides.length) { slideIndex = 1 }
+            if (n < 1) { slideIndex = slides.length }
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex - 1].style.display = "block";
+            dots[slideIndex - 1].className += " active";
+            captionText.innerHTML = dots[slideIndex - 1].alt;
+        }
+    </script>
 </body>
 
 </html>

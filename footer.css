@@ -26,6 +26,10 @@
     width: 50%;
 }
 
+.input-box {
+    display: flex;
+}
+
 .input-box input {
     padding: 13px 40px;
 }
@@ -33,8 +37,9 @@
 .input-box button {
     padding: 13px;
     background-color: orange;
-    border: 2px solid orange;
-    position: absolute;
+    border: none;
+    color: white;
+
 }
 
 .text h1 {

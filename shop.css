@@ -129,6 +129,7 @@
 .date {
     display: flex;
     gap: 15px;
+    padding: 7px 15px;
     background: rgb(201, 230, 241);
 }
 
@@ -136,6 +137,7 @@
     display: flex;
     gap: 15px;
     background: rgb(201, 230, 241);
+    padding: 7px 15px;
 }
 
 .view select {
@@ -205,6 +207,7 @@
 
 .gray {
     background-color: rgb(201, 230, 241);
+    border: none;
 }
 
 .star {
@@ -299,8 +302,4 @@
     background-color: orange;
     color: white;
     transition: 0.5s ease;
-}
-
-.bod {
-    border: none;
 }
